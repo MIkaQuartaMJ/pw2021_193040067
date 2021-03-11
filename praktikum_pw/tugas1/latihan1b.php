@@ -7,23 +7,30 @@ Praktikum Pertemuan 1
 */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <title>193040067_MikaQMJ</title>
 </head>
 
 <body>
     <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th></th>
+            <?php for ($i = 1; $i <= 5; $i++) : ?>
+                <th>Kolom <?= $i; ?></th>
+            <?php endfor; ?>
+        </tr>
+
         <?php for ($i = 1; $i <= 5; $i++) : ?>
             <tr>
-                <?php for ($j = 1; $j <= 5; $j++) : ?>
-                    <th> Kolom <?php= $i, $j; ?></th>
+                <th>Baris <?php echo $i; ?></th>
+                <?php for ($h = 1; $h <= 5; $h++) : ?>
+                    <td>Baris <?php echo $i ?>, Kolom <?php echo $h; ?></td>
                 <?php endfor; ?>
             </tr>
         <?php endfor; ?>
+    </table>
 </body>
-</table>
 
 </html>
