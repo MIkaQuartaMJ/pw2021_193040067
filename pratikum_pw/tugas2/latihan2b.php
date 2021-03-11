@@ -20,7 +20,7 @@ function soal($style)
 <html>
 
 <head>
-    <title>203040071</title>
+    <title>193040067_MikaQMJ</title>
     <style>
         .kata {
             border: 2px solid black;
